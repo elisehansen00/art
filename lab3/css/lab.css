@@ -4,6 +4,22 @@
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
+    border: solid 1px #874e7a;
+    background-color: #ecb8f1;
   }
+.oldweb {
+  margin: 10px;
+  max-width: 500px;
+}
+.lab00 {
+  margin: 10px;
+  max-width: 500px;
+}
+.lab01 {
+  margin: 10px;
+  max-width: 500px;
+}
+.lab02 {
+  margin: 10px;
+  max-width: 500px;
+}
