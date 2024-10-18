@@ -4,6 +4,23 @@
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
+    border: solid 1px #e8a9a9;
+    background-color: #ffc4ffcb;
+  }
+
+  .pumpkin {
+    margin: 10px;
+    max-width: 150px;
+  }
+  .bat {
+    margin: 10px;
+    max-width: 150px;
+  }
+  .web {
+    margin: 10px;
+    max-width: 150px;
+  }
+  .witchhat {
+    margin: 10px;
+    max-width: 150px;
   }
