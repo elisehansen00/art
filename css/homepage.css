@@ -23,3 +23,7 @@
 .myflex {
   display: flex 
 }
+.thrifitnglove {
+  margin: 10px;
+  max-width: 500px;
+}
