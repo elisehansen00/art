@@ -1,4 +1,4 @@
-// Author: ELise Hansen
+// Author: Elise Hansen
 // Date: 10/29/2024
 
 //Step 1: Create an array of numbers and assign to a variable.
