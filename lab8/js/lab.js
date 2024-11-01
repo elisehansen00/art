@@ -1,24 +1,29 @@
 // Author: ELise Hansen
 // Date: 10/29/2024
 
-// function
-function yourUnluckyNumber(x) {
-    return (x + 13 == 0);
+//Step 1: Create an array of numbers and assign to a variable.
+let numbers = [2,4,6,8,10];
+
+// Step 2
+function sqaure(x) {
+    var results = x * x;
+    return results;
 }
 
-//test
-console.log("Is this lucky? ", isEven(1));
-console.log("Is this lucky? ", isEven(2));
+// Step 3: Test
+console.log(square(3)); // = 9
+console.log(square(5)); 
+console.log(square(7));
 
-array = [99, 13, 4, 22, 44, 69, 88]
-console.log("My array", array);
+// Step 4: Use map with array
 
-var result = array.map(isEven);
-console.log("Test of luckiness of array: ", result);
+var result = numbers.map(square);
+console.log("Results using square function: ", result);
 
-var result = array.map(function(x){
-    return x % 7;
+// Step 5:
+var resultAnon = numbers.map(function(x){
+    return x + 5;
+});
 
-})
-
-console.log("New unlucky numbers: ", result);
+// Step 6:
+console.log("Results using anonymous function: ", resultAnon);
