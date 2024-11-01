@@ -5,7 +5,7 @@
 let numbers = [2,4,6,8,10];
 
 // Step 2
-function sqaure(x) {
+function square(x) {
     var results = x * x;
     return results;
 }
