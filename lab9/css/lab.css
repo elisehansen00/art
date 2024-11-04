@@ -1,0 +1,17 @@
+
+.minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: dotted 5px #dbd271;
+    background-color: #d49680;
+  }
+  .woman {
+    margin: 10px;
+    max-width: 500px;
+  }
+  .special {
+    background-color: cornflowerblue;
+    border: dotted 50px palevioletred;
+    color: pink;
+    font-weight: bold;
+}
