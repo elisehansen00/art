@@ -11,7 +11,7 @@
   }
   .special {
     background-color: cornflowerblue;
-    border: dotted 50px palevioletred;
+    border: dashed 50px palevioletred;
     color: pink;
     font-weight: bold;
 }
