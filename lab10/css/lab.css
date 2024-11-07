@@ -9,6 +9,10 @@
     margin: 10px;
     max-width: 500px;
   }
+  .dunepaul {
+    margin: 10px;
+    max-width: 500px;
+  }
   .text {
     display: inline-block;
     max-width: 60%;
@@ -34,6 +38,6 @@
   }
   
   .text:nth-child(even) p {
-    background-color: #a3f2b0;
-    color: white;
+    background-color: #d7f1db;
+    color: rgb(10, 48, 9);
   }
