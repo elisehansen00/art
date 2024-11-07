@@ -20,3 +20,20 @@
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.8em;
   }
+  .text:nth-child(odd) {
+    text-align: left;
+  }
+  
+  .text:nth-child(odd) p {
+    background-color: rgb(149, 192, 203);
+    color: black;
+  }
+  
+  .text:nth-child(even) {
+    text-align: right;
+  }
+  
+  .text:nth-child(even) p {
+    background-color: #a3f2b0;
+    color: white;
+  }
