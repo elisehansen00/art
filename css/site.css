@@ -5,6 +5,7 @@
 /* we can select an html element tag, in this case "body" will apply to the whole document */
 body {
   background-color: #e4a1cd;
+  cursor:url('https://static.wikia.nocookie.net/the-sidaba-bunch/images/c/cc/Miffy.png/revision/latest?cb=20240615140420'), auto;
 }
 
 /* we can have rules apply to multiple elements at the same time with commas */
@@ -34,3 +35,6 @@ h1 {
   border: solid 1px #f1bcbc;
   background-color: #8a6277;
 }
+
+
+
