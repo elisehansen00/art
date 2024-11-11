@@ -17,7 +17,7 @@
     max-width: 200px;
     text-align: center;
     text-decoration: wavy;
-    text-size-adjust: auto;
+    text-size-adjust: 100px;
   }
   .pumpitup {
     margin: 10px;
