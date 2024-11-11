@@ -1,0 +1,25 @@
+
+.minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: dashed 10px #4fa763;
+    background-color: #6685bb;
+  }
+
+  #output {
+    background-color: rgb(248, 248, 248);
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 15px;
+    border: solid 3px black;
+    min-height: 100px;
+  }
+  .pumpitup {
+    margin: 10px;
+    max-width: 500px;
+  }
+  #button {
+    background-color: lightskyblue;
+    border: solid 3px purple;
+    padding: 10px;
+  }
