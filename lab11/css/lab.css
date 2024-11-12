@@ -16,15 +16,17 @@
     min-height: 100px;
     max-width: 200px;
     text-align: center;
-    text-decoration: wavy;
-    text-size-adjust: 100px;
+    font-size: 100px;
+    text-align: center;
   }
   .pumpitup {
     margin: 10px;
     max-width: 500px;
   }
-  #button {
+  .button {
     background-color: lightskyblue;
     border: solid 3px purple;
-    padding: 10px;
+    padding: 5px;
+    font-family: "Copperplate", fantasy;
+    float: center;
   }
