@@ -26,7 +26,11 @@
   .button {
     background-color: lightskyblue;
     border: solid 3px purple;
-    padding: 5px;
+    padding: 10px;
     font-family: "Copperplate", fantasy;
     float: center;
+  }
+  .input {
+    float: center;
+    padding: 10px;
   }
