@@ -1,0 +1,28 @@
+
+.minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: groove 10px #dfe6a2;
+    background-color: #a2cafe;
+  }
+#output {
+    background-size: contain;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 15px;
+    border: solid 3px black;
+    min-height: 100px;
+    max-width: 200px;
+    text-align: center;
+    font-size: 30px;
+    text-align: center;
+    background-color: antiquewhite;
+  }
+.conditionwoman {
+    margin: 10px;
+    max-width: 500px;
+  }
+.input {
+    float: center;
+    padding: 10px;
+  }
