@@ -5,48 +5,42 @@
 
 housesArray = [
   {
-      title: "Gryffindor",
-      text: "A Gryffindor values 'bravery, daring, nerve, and chivalry.' Those sorted in this house are not always what you may think of as 'brave' (they can be afraid), but they almost always will choose to do the right thing, despite consequences. They are the popular house and all the Potterheads want to be Gryffindor, even if they don't necessarily belong."
+      title: "Carrie",
+      text: "You are often led by your emotions, seeking validation and acceptance from romantic partners and others. At times, you display self-centered behaviors but can be brought back to reality by your friends. YOur blend of emotional vulnerability, humor, creativity, and daring fashion chops make you a Carrie."
   },
   {
-      title: "Hufflepuff",
-      text: "A Hufflepuff values 'hard work, dedication, patience, loyalty, and fair play.' They are generally kind-hearted, diligent, and reliable. But they are also the unpopular house and many Potterheads treat being sorted into Hufflepuff like being worse than getting kissed by a dementor."
+      title: "Miranda",
+      text: "You are logical and pragmatic when it comes to all life decisions. Building a steady career and confidence in your intellect and work abilites is paramount to your identity. Learning to let go at times and listen to your heart and be vulnerable might be beneficial to you."
   },
   {
-      title: "Ravenclaw",
-      text: "A Ravenclaw values 'intelligence, knowledge, and wit.' The nerds of Hogwarts, but in the best way. They don't need a wand to disarm you. Their words will cut you to the bone. They are highly intelligent, resourceful, creative, and clever. They're pretty cool and most Potterheads don't mind being sorted into Ravenclaw"
+      title: "Charlotte",
+      text: "Traditional, polite, and charming, you want nothing more than to be settled comfortably in life. Choosing to let your partners lead, you abide by the ways of the hegemonic cultural norms of your time. You are a loyal friend who is happy to provide comforting advice and enjoy the little things. Being decisive in what you hope to achieve while staying optimistic is what makes you a Charlotte."
   },
   {
-      title: "Slytherin",
-      text: "A Slytherin values 'ambition, cunning, and resourcefulness.' They are sly and clever in every way. They don't need to be brash to get what they want. They are considered the bullies of Hogwarts and the general all around evil-doers. But there are tons of great Slytherin alumni. We just hear a whole lot about the bad ones"
+      title: "Samantha",
+      text: "Bold, charismatic, and witty, you want to be the best and the hottest in any room you walk in. In public and in private, you strive to dominate every area of your life. You are passionate and loyal to your friends and partners and a great communicator. Slowing down to smell the flowers will aid you in being the best Samantha you can be."
   },
   {
-      title: "Grufflepuff (Gryffindor + Hufflepuff)",
-      text: "Grufflepuffs are brave and courageous, and they use those traits to do good for others. They work hard, and are not afraid to speak their minds. They value honesty, goodness, kindness, and most of all, love. A Grufflepuff is the kind of person you want to be. They hold themselves to high standards and are just genuinely all around awesome people"
+      title: "Carranda (Carrie + Miranda)",
+      text: "You combine Carrie's emotional vulnerability with Miranda's pragmatism. You can rule your career while still seeking validation of your secret self in your personal life. Letting go of logic while embracing optimism and love will make you truly happy."
   },
   {
-      title: "Ravendor (Ravenclaw + Gryffindor)",
-      text: "A Ravendor boldly goes where no one else goes intellectually. They are not afraid to debate philosophy and controversial matters, and as firm and confident as they are in themselves, they are also open minded and willing to learn. They are smart, but not intellectual snobs (though if they aren't careful they may come off that way). They'll help you with your homework, even if they have piles of their own. They are the most adept public speakers of the lot"
+      title: "Charlie (Charlotte + Carrie)",
+      text: "You truly love to love. Bound by tradition, you believe that your one true love is out there. Loyal, smart, and interested in art, you can embrace romance in any form if you put your mind to it. Shopping and spending an evening at an art gallery opening is your ideal day. You can benefit by channeling your emotions into your creative side and being more attentive to your own feelings rather than being guided by other's opinions."
   },
   {
-      title: "Slyffindor (Slytherin + Gryffindor)",
-      text: "You'd think that Slyffindors are a constant battle for good and evil, but that is not always the case. They are ambitious, and not afraid to do what they have to do to get where they want to be. They are extraodinary business men and women, and are highly successful. Slyffindors are the definition of ambiverts. They have the charm and charisma that helps them get whatever they want, but they know just when and how to be quiet. And they like those moments of quiet. Sure, some Slyffindors are extremely torn between the darkness and the light, and they often have a very strong devil/angel on the shoulder thing going on in their heads, but a lot of them are really awesome."
+      title: "Samantie (Samantha + Carrie)",
+      text: "A bombastic wit with a gift for gab, you light up every room you walk into. You understand how to carry yourself well and get other's on your side in any debate. Assets such as these can make you overconfident and prone to speaking your mind, for better or for worse. Aim to achieve patience and peace rather than rushing into new things and luring new people, as your charm and drive is very magnetic."
   },
   {
-      title: "Ravenpuff (Ravenclaw + Hufflepuff)",
-      text: "These are the people that you see in the library studying at all hours of the day. They are determined to be the very best they can be at everything, whether it be art, music, school or sports. They are always pushing themselves, not to be better than anyone else, but to personally better themselves. Sometimes, they can go a little overboard in their pursuit for greatness, and they can get upset when things don't go their way, but they are extraordinarily reliable and good at basically everything, so they are an excellent resource to keep around."
+      title: "Miralotte (Miranda + Charlotte)",
+      text: "Following the rules and doing things the right way is of the utmost importance to you. You aim to act and appear extremely smart, and often chase professional and social achievements while letting love come to you. You are eager and go-getting, but secretly dreamy and scatterbrained if left to your own structures. Embracing spontaenity and exploring outside of your comfort zone could do wonders for your inner-self."
   },
   {
-      title: "Raverin (Ravenclaw + Slytherin)",
-      text: "Don't mess with a Raverin. Seriously. Don't. They are not only intelligent, witty, and creative, but they are sly, ambitious, and can be very cutthroat. They know just how to kill you in the worst way possible and make it look like an accident. But they aren't all bad. Sherlock Holmes would definitely be a Raverin, and he uses his sly intelligence to do good. Sure he may rub people the wrong way at times, but he genuinely is an awesome guy. But Moriarty would also be a Raverin. Let's just say it is up to each Raverin to choose his or her path, and it is up to you to decide if your beef with a Raverin is really worth what they'll give back to you if you decide to mess with them."
+      title: "Charantha (Charlotte + Samantha)",
+      text: "Combining fiery passion with a strong belief in love is a dangerous potion."
   },
-  {
-      title: "Slytherpuff (Hufflepuff + Slytherin)",
-      text: "Slytherpuffs are the 'good Slytherins,' if you will. They are ambitious and they have deeply rooted morals that keep them grounded. They use that resourcefulness and ambition to help others, do good things, and spread kindness. They would be the kind of people that start non-profits (if wizards have non-profits, that is). They are some of the best kind of people. We could definitely see them palling around with Grufflepuffs."
-   }
 ]
-
-creditHTML = '<div class="credits">Hogwarts house descriptions courtesy of <a href="https://iamjustdandi.wordpress.com/2015/11/06/those-in-between-hogwarts-houses/">iamjustdandi</a></div>';
 
 introHTML = '<div class="stage-direction">The Sorting Hat sings his song:</div>'
 
@@ -57,16 +51,16 @@ function sortingHatLength(str) {
 len = str.length;
 mod = len % 4;
 if (mod == 0) {
-  return "Gryffindor"
+  return "Carrie"
 }
 else if (mod == 1) {
-  return "Ravenclaw"
+  return "Miranda"
 }
 else if (mod == 2) {
-  return "Slytherin"
+  return "Charlotte"
 }
 else if (mod == 3) {
-  return "Hufflepuff"
+  return "Samantha"
 }
 }
 
