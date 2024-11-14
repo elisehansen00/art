@@ -18,10 +18,10 @@
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
   }
-.conditionwoman {
-    margin: 10px;
-    max-width: 500px;
-  }
+.entername {
+  margin: 10px auto;
+  padding: 10px auto;
+}
 .input {
     padding: 10px;
     align-items: center;
