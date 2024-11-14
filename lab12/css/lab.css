@@ -23,11 +23,12 @@
     max-width: 500px;
   }
 .input {
-    float: center;
     padding: 10px;
+    align-items: center;
   }
 #button {
   background-color: paleturquoise;
   font-family: 'Courier New', Courier, monospace;
+  align-items: center;
 }
 

@@ -41,7 +41,7 @@ housesArray = [
       text: "Combining fiery passion with a strong belief in love is a dangerous potion."
   }
 ]
-creditHTML = '<div class="credits">Hogwarts house descriptions courtesy of <a href="https://iamjustdandi.wordpress.com/2015/11/06/those-in-between-hogwarts-houses/">iamjustdandi</a></div>';
+creditHTML = '<div class="credits"> I wrote most of these but some inspiration credit and wording credit to Carrie Bradshaw page on Wikipedia.</div>';
 introHTML = '<div class="stage-direction">The Sorting Hat sings his song:</div>';
 
 
@@ -97,7 +97,7 @@ if (hasClass(ele,cls)) {
 }
 
 // Given a name, hash the string, and
-// return Gryffindor, Ravenclaw, Slytherin, and Hufflepuff
+// return Carrie, Samantha, Charlotte, or Miranda
 function sortingHatHash(str) {
 checksumValue = checksum(str);
 mod = Math.abs(checksumValue) % housesArray.length;
