@@ -39,10 +39,10 @@ housesArray = [
   {
       title: "Charantha (Charlotte + Samantha)",
       text: "Combining fiery passion with a strong belief in love is a dangerous potion."
-  },
+  }
 ]
-
-introHTML = '<div class="stage-direction">The Sorting Hat sings his song:</div>'
+creditHTML = '<div class="credits">Hogwarts house descriptions courtesy of <a href="https://iamjustdandi.wordpress.com/2015/11/06/those-in-between-hogwarts-houses/">iamjustdandi</a></div>';
+introHTML = '<div class="stage-direction">The Sorting Hat sings his song:</div>';
 
 
 // Return Gryffindor, Ravenclaw, Slytherin, and Hufflepuff
