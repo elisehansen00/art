@@ -42,10 +42,10 @@ housesArray = [
   }
 ]
 creditHTML = '<div class="credits"> I wrote most of these but some inspiration credit and wording credit to Carrie Bradshaw page on Wikipedia.</div>';
-introHTML = '<div class="stage-direction">The Sorting Hat sings his song:</div>';
+introHTML = '<div class="stage-direction"> The ladies confer over brunch: </div>';
 
 
-// Return Gryffindor, Ravenclaw, Slytherin, and Hufflepuff
+// Return Carrie, Miranda, Charlotte, or Samantha
 // depending on length mod 4
 function sortingHatLength(str) {
 len = str.length;
