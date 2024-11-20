@@ -4,7 +4,7 @@
 
 /* we can select an html element tag, in this case "body" will apply to the whole document */
 body {
-  background-color: #e4a1cd;
+  background-color: #f8f5f7;
   cursor:url('https://static.wikia.nocookie.net/the-sidaba-bunch/images/c/cc/Miffy.png/revision/latest?cb=20240615140420'), auto;
 }
 
@@ -24,16 +24,16 @@ h1 {
 #content {
   margin: 10px;
   padding: 10px;
-  border: solid 1px #c77e7e;
-  background-color: #bc9bae;
+  border: solid 1px #f6f2f2;
+  background-color: #eee8eb;
 }
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
   padding: 10px;
   margin-bottom: 10px;
-  border: solid 1px #f1bcbc;
-  background-color: #8a6277;
+  border: solid 1px #f7efef;
+  background-color: #f7f2f5;
 }
 
 

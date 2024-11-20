@@ -3,26 +3,8 @@
     padding: 10px;
     margin-bottom: 10px;
     border: dashed 10px #7e9cec;
-    background-color: #eafea2;
+    background-color: #ecb9e3;
   }
-#output {
-    margin: 10px auto;
-    padding: 10px;
-    border-radius: 15px;
-    border: solid 3px black;
-    min-height: 100px;
-    max-width: 500px;
-    text-align: left;
-    font-size: 20px;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-  }
-.entername {
-  /* margin: 10px auto;
-  padding: 10px auto; */
-  margin: auto;
-  display: block;
-}
 .input {
     padding: 10px;
     align-items: center;
@@ -31,5 +13,9 @@
   background-color: paleturquoise;
   font-family: 'Courier New', Courier, monospace;
   align-items: center;
+}
+.buzzball {
+  max-width: 500px;
+  max-height: 500px;
 }
 
