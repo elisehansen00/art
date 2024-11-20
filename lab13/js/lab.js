@@ -1,32 +1,10 @@
 // Author: Elise Hansen
 // Date: 11/12/2024
 
-//let num = 7;
-//let guess = Number(prompt("Guess a number 1 to 10: "));
-//while (guess !==num){
-//console.log("Nope try again!");
-//guess = Number(prompt("Guess a number between 1 and 10: "))
-//}
+maxFactors = 4;
 
-//console.log("You got it!")
+outputEl = document.getElementById("output");
 
-// Fizz and Buzz (and boom)
-
-//for(let i=1;i<=100;i++); {
-//if(i%15 == 0) {
-    //console.log("FizzBuzz");
-//  }
-//else if(i%3 == 0) {
-  //console.log("Fizz");
-//}
-//else if(i%5 == 0) {
-  //console.log("Buzz");
-//}
-//else if (i%7 == 0) {}
-//else {
-//console.log(i);
-//}
-//}
 function getFactorObj() {
   var factorObj = {};
   for (var factor=0; factor<maxFactors; factor++) {
