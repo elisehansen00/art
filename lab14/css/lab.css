@@ -5,32 +5,9 @@
     border: wavy 10px #dfe6a2;
     background-color: #a2cafe;
   }
-#output {
-    background-image: -webkit-image-set('https://img1.picmix.com/output/stamp/normal/6/5/3/6/2446356_9a190.gif');
-    margin: 10px auto;
-    padding: 10px;
-    border-radius: 15px;
-    border: solid 3px black;
-    min-height: 100px;
-    max-width: 500px;
-    text-align: left;
-    font-size: 20px;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-  }
-.entername {
-  /* margin: 10px auto;
-  padding: 10px auto; */
-  margin: auto;
-  display: block;
-}
-.input {
-    padding: 10px;
-    align-items: center;
-  }
-#button {
-  background-color: paleturquoise;
-  font-family: 'Courier New', Courier, monospace;
-  align-items: center;
+.continue {
+  max-width: 500px;
+  max-height: 500px;
+  padding: 10px;
 }
 
