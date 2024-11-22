@@ -18,10 +18,7 @@
     font-family: 'Courier New', Courier, monospace;
   }
 .buzzball {
-  position: absolute;
-  left: 0px;
   width: 300px;
-  border: 3px solid #7b90c5;
   padding: 10px;
 }
 .entername {
