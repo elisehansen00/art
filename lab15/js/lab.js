@@ -8,7 +8,7 @@
 URL = "https://api.api-ninjas.com/v1/quotes?category=dating"
 
 // attach click action to button
-$('#action').click(function(){
+$('#button').click(function(){
     // get data via ajax from numbersapi
     // Using the core $.ajax() method
     $.ajax({
