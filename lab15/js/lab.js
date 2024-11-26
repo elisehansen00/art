@@ -1,7 +1,7 @@
 // Author: Elise Hansen
 // Date: 11/25/2024
 
-URL = "https://api.kanye.rest/"
+URL = "https://api.kanye.rest/";
 
 // attach click action to button
 $('#button').click(function(){
@@ -23,7 +23,7 @@ $('#button').click(function(){
         var printableData = "<pre>" + JSON.stringify(data, null, 2) + "</pre>";
         // put data in webpage
         $("#title").html(data.title)
-        $("#output").append("<p>Here's what you should do when you are bored: <b>" + data.activity);
+        $("#output").append("<p> my humble advice to you is: <b>" + data.quote);
         
 
     })
