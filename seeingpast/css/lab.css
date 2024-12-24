@@ -11,3 +11,10 @@ img {
   height: auto;
   object-fit: contain;
 }
+.project-images {
+  display: flex; /* Activates Flexbox */
+  flex-wrap: wrap; /* Ensures items wrap to the next line if necessary */
+  gap: 10px; /* Adds space between images */
+  justify-content: space-between; /* Aligns items horizontally (center, start, end, space-between, etc.) */
+  align-items: center; /* Aligns items vertically */
+}
