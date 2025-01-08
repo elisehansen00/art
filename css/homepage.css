@@ -20,7 +20,7 @@
 .myflex-minor-section {
   display: flex; /* Activates Flexbox */
   flex-wrap: wrap; /* Ensures items wrap to the next line if necessary */
-  gap: 10px; /* Adds space between images */
+  gap: 30px; /* Adds space between images */
   justify-content: center; /* Aligns items horizontally (center, start, end, space-between, etc.) */
   align-items: center; /* Aligns items vertically */
 }
@@ -34,6 +34,12 @@ li a {
   display: block;
 }
 h2 {
-  padding: 10px;
+  padding: 5px;
   text-align: center;
+}
+body {
+  background-image: url("/img/collage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
