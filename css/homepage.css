@@ -43,3 +43,6 @@ body {
   background-size: cover;
 
 }
+a:hover img {
+  opacity: 0.7;
+}
