@@ -20,7 +20,7 @@
 .myflex-minor-section {
   display: flex; /* Activates Flexbox */
   flex-wrap: wrap; /* Ensures items wrap to the next line if necessary */
-  gap: 30px; /* Adds space between images */
+  gap: 50px; /* Adds space between images */
   justify-content: center; /* Aligns items horizontally (center, start, end, space-between, etc.) */
   align-items: center; /* Aligns items vertically */
 }
