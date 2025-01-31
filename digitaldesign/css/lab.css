@@ -7,8 +7,7 @@
     justify-items: center;
 }
 img {
-  max-width: 300px;
-  max-height: 200px;
+  max-width: 500px;
   width: auto; 
   height: auto;
   object-fit: contain;
@@ -16,7 +15,7 @@ img {
 .project-images {
   display: flex; /* Activates Flexbox */
   flex-wrap: wrap; /* Ensures items wrap to the next line if necessary */
-  gap: 20px; /* Adds space between images */
+  gap: 50px; /* Adds space between images */
   justify-content: space-evenly; /* Aligns items horizontally (center, start, end, space-between, etc.) */
   align-items: center; /* Aligns items vertically */
 }
