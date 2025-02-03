@@ -23,15 +23,11 @@
   gap: 70px; /* Adds space between images */
   justify-content: center; /* Aligns items horizontally (center, start, end, space-between, etc.) */
   align-items: center; /* Aligns items vertically */
-  padding: 50px 0; /* Adds 50px padding to the top and bottom */
+  padding: 50px 5vw; /* Adds 50px padding to the top and bottom */
   border-radius: 20px; /* Adjust the value for more or less rounding */
   overflow: hidden; /* Ensures child elements don't overflow the rounded corners */
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 100px;
+  margin: 0 auto; /* Centers it */
+
 }
 li a {
   display: block;
@@ -39,12 +35,6 @@ li a {
 h2 {
   padding: 5px;
   text-align: center;
-}
-body {
-  background-image: url("/img/collage.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-
 }
 a:hover img {
   opacity: 0.7;

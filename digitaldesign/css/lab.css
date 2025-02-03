@@ -3,8 +3,6 @@
     margin-bottom: 10px;
     border: solid 1px #888;
     background-color: #c8d2ec;
-    justify-content: center;
-    justify-items: center;
 }
 img {
   max-width: 500px;
@@ -16,8 +14,12 @@ img {
   display: flex; /* Activates Flexbox */
   flex-wrap: wrap; /* Ensures items wrap to the next line if necessary */
   gap: 50px; /* Adds space between images */
-  justify-content: space-evenly; /* Aligns items horizontally (center, start, end, space-between, etc.) */
+  justify-content: center; /* Aligns items horizontally (center, start, end, space-between, etc.) */
   align-items: center; /* Aligns items vertically */
+  padding: 50px 5vw; /* Adds 50px padding to the top and bottom */
+  border-radius: 20px; /* Adjust the value for more or less rounding */
+  overflow: hidden; /* Ensures child elements don't overflow the rounded corners */
+  margin: 0 auto; /* Centers it */
 }
 .myName {
   display: block;
