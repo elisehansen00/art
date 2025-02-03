@@ -20,9 +20,12 @@
 .myflex-minor-section {
   display: flex; /* Activates Flexbox */
   flex-wrap: wrap; /* Ensures items wrap to the next line if necessary */
-  gap: 50px; /* Adds space between images */
+  gap: 70px; /* Adds space between images */
   justify-content: center; /* Aligns items horizontally (center, start, end, space-between, etc.) */
   align-items: center; /* Aligns items vertically */
+  padding: 50px 0; /* Adds 50px padding to the top and bottom */
+  border-radius: 20px; /* Adjust the value for more or less rounding */
+  overflow: hidden; /* Ensures child elements don't overflow the rounded corners */
 }
 ul {
   list-style-type: none;

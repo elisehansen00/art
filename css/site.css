@@ -34,6 +34,8 @@ h1 {
   margin-bottom: 10px;
   border: solid 1px #ffffff;
   background-color: #d8dee9;
+  border-radius: 20px; /* Adjust the value for more or less rounding */
+  overflow: hidden; /* Ensures child elements don't overflow the rounded corners */
 }
 
 
