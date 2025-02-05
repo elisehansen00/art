@@ -27,7 +27,6 @@
   border-radius: 20px; /* Adjust the value for more or less rounding */
   overflow: hidden; /* Ensures child elements don't overflow the rounded corners */
   margin: 0 auto; /* Centers it */
-
 }
 li a {
   display: block;
