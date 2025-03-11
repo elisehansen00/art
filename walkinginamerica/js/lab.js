@@ -29,10 +29,10 @@ var closeBtn = document.getElementsByClassName("close")[0];
 var photos = document.querySelectorAll('.photo');
 
 // When any photo is clicked, open the modal and display the clicked photo
-photos.forEach(function(photo) {
+photos.forEach(function(img) {
   photo.addEventListener("click", function() {
     modal.style.display = "flex";
-    modalImg.src = photo.src;
+    modalImg.src = img.src;
     captionText.innerHTML = photo.alt;
   });
 });
