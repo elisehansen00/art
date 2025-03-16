@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title> Collage Art and Design </title>
+	<title>Collage Art and Design</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
   	<meta charset="UTF-8" />
@@ -11,44 +11,39 @@
 	
 	<!-- Include a sitewide CSS file for consistent styling across the site -->
 	<link rel="stylesheet" type="text/css" href="../css/site.css">
-	<!-- Lab-specifc CSS file for any special styling of this particular page -->
+	<!-- Page-specific CSS overrides -->
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
 	
-	<!-- load jQuery library to make javascript easier (must be above our lab js)-->
-	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
-	<script type="text/javascript" src="./js/lab.js" DEFER></script>
+	<script type="text/javascript" src="../js/gallery.js" defer></script>
 	<link rel="icon" href="https://64.media.tumblr.com/d5da4b276773fb266e2c05b0d11e262e/c3f7a9a2c22ff1f3-b5/s2048x3072/ccc081a3c3662bb0e0d0fa0e0b6132b52add14d8.pnj">
 </head>
 <body>
-	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
 	<main id="content">
 		<section>
 			<a href="https://elisehansen00.github.io/art/"><img class="myName" src="./img/nameWebsite.png"></a>
-				<h1> Digital and Analog Collage</h1>
-				<h2> I create digital and paper collage art using found objects, stamps, ink drawing, digital images from CC0 sources such as the Smithsonian Open Access webiste. I also often incorporate my own photographs, both digital and film, to create original, striking, and unique compositions.</h2>
-			<div class="minor-section">
-				<div class="project-images">
-					<img src="./img/Bardot_graphic.jpg">
-					<img src="./img/aprilplaylist2024.jpg">
-					<img src="./img/club_graphic.jpg">
-					<img src="./img/1_13_23_edit.jpg">
-					<img src="./img/scan_01_22_23_edit.jpg">
-					<img src="./img/scan_6_05_23_edit.jpg">
-					<img src="./img/october_playlist.jpg">
-					<img src="./img/playlist_cover_June2.jpg">
-					<img src="./img/januarygirl2025.jpg">
-					<img src="./img/scan_05_02_23editwm.jpg">
-					<img src="./img/scan_07_14_23_02 _copy_WM.jpg">
-					<img src="./img/scan_01_17_23_edit.jpg">
-
-					</div> 
+			<h1 class="text-center">Digital and Analog Collage</h1>
+			<h2 class="text-center mb-4">I create digital and paper collage art using found objects, stamps, ink drawing, digital images from CC0 sources such as the Smithsonian Open Access website. I also often incorporate my own photographs, both digital and film, to create original, striking, and unique compositions.</h2>
+			
+			<!-- Dynamic gallery using the reusable component -->
+			<div id="collageGallery" class="dynamic-gallery" data-swap-interval="35000">
+				<img src="./img/Bardot_graphic.jpg" alt="Bardot Graphic Collage">
+				<img src="./img/aprilplaylist2024.jpg" alt="April Playlist 2024 Collage">
+				<img src="./img/club_graphic.jpg" alt="Club Graphic Collage">
+				<img src="./img/1_13_23_edit.jpg" alt="Collage - January 2023">
+				<img src="./img/scan_01_22_23_edit.jpg" alt="Collage - January 2023">
+				<img src="./img/scan_6_05_23_edit.jpg" alt="Collage - June 2023">
+				<img src="./img/october_playlist.jpg" alt="October Playlist Collage">
+				<img src="./img/playlist_cover_June2.jpg" alt="June Playlist Collage">
+				<img src="./img/januarygirl2025.jpg" alt="January Girl 2025 Collage">
+				<img src="./img/scan_05_02_23editwm.jpg" alt="Collage - May 2023">
+				<img src="./img/scan_07_14_23_02 _copy_WM.jpg" alt="Collage - July 2023">
+				<img src="./img/scan_01_17_23_edit.jpg" alt="Collage - January 2023">
 			</div>
-					<div id="output"></div>
 		</section>
-		<nav id="links">
-			<!-- links -->
-			 <a href="https://elisehansen00.github.io/art/"> Back Home! </a>
+		
+		<nav id="links" class="mt-4">
+			<a href="https://elisehansen00.github.io/art/">Back Home!</a>
 		</nav>
 	</main>
 </body>

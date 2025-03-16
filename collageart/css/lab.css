@@ -1,35 +1,41 @@
-.minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #c8d2ec;
-    justify-content: center;
-    justify-items: center;
+/*
+ * Collage Art - Page-specific styles
+ * Only styles that override or extend site.css should go here
+ */
+
+/* Customize the gallery for collage art */
+#collageGallery {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 25px;
+  background-color: #f5f5f5;
 }
-img {
-  max-width: 500px;
-  max-height: 800px;
-  width: auto; 
-  height: auto;
-  object-fit: contain;
+
+/* Collage images have varied orientations, so we use cover */
+#collageGallery img {
+  object-fit: cover;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
-.project-images {
-  display: flex; /* Activates Flexbox */
-  flex-wrap: wrap; /* Ensures items wrap to the next line if necessary */
-  gap: 20px; /* Adds space between images */
-  justify-content: space-evenly; /* Aligns items horizontally (center, start, end, space-between, etc.) */
-  align-items: center; /* Aligns items vertically */
+
+/* Special styling for the page content */
+#content {
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
 }
-.myName {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 500px;
-  padding: 15px;
-}
+
+/* Typography adjustments */
 h1 {
-  display: block;
+  margin-top: 30px;
+  color: #444;
+}
+
+h2 {
+  font-size: 130%;
+  color: #555;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px;
+  line-height: 1.5;
 }

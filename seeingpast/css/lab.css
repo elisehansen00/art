@@ -1,35 +1,49 @@
-.minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #c8d2ec;
-    justify-content: center;
-    justify-items: center;
-  }
-img {
-  max-width: 500px;
-  max-height: 500px;
-  width: auto; 
-  height: auto;
-  object-fit: contain;
+/*
+ * Seeing Past - Page-specific styles
+ * Only styles that override or extend site.css should go here
+ */
+
+/* Customize the gallery specifically for the Seeing Past project */
+#seeingPastGallery {
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+  padding: 25px;
+  background-color: #f0f0f0;
 }
-.project-images {
-  display: flex; /* Activates Flexbox */
-  flex-wrap: wrap; /* Ensures items wrap to the next line if necessary */
-  gap: 10px; /* Adds space between images */
-  justify-content: space-between; /* Aligns items horizontally (center, start, end, space-between, etc.) */
-  align-items: center; /* Aligns items vertically */
+
+/* Use cover for consistency across photos in this series */
+#seeingPastGallery img {
+  object-fit: cover;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  will-change: transform, opacity;
+  background-color: #f8f8f8; /* Shows a placeholder color while loading */
 }
-.myName {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 500px;
-  padding: 15px;
+
+/* Special styling for the page content */
+#content {
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
 }
+
+/* Typography adjustments */
 h1 {
-  display: block;
+  margin-top: 30px;
+  color: #333;
+}
+
+h2 {
+  font-size: 120%;
+  color: #555;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px;
+  line-height: 1.6;
+}
+
+/* Container for the description text */
+.container {
+  max-width: 950px;
+  margin: 0 auto 30px auto;
 }

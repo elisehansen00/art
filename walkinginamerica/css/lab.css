@@ -1,79 +1,33 @@
-.minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #c8d2ec;
-    justify-content: center;
-    justify-items: center;
+/*
+ * Walking in America - Page-specific styles
+ * Only styles that override or extend site.css should go here
+ */
+
+/* Slightly larger column size for this gallery */
+#walkingGallery {
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
 }
-img {
-  max-width: 300px;
-  max-height: 200px;
-  width: auto; 
-  height: auto;
-  object-fit: contain;
-  cursor: pointer;
-  transition: transform 0.2s;
+
+/* Add a subtle drop shadow to the page content */
+#content {
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
 }
-.img:hover {
-  transform: scale(1.05);
-}
-.project-images {
-  display: flex; /* Activates Flexbox */
-  flex-wrap: wrap; /* Ensures items wrap to the next line if necessary */
-  gap: 20px; /* Adds space between images */
-  justify-content: space-evenly; /* Aligns items horizontally (center, start, end, space-between, etc.) */
-  align-items: center; /* Aligns items vertically */
-}
-.myName {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 500px;
-  padding: 15px;
-}
+
+/* Customize headings for this project */
 h1 {
-  display: block;
+  margin-top: 10px;
+  color: #444;
+}
+
+h2 {
+  font-size: 130%;
+  color: #555;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px;
-}
-/* Style for the modal */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.7);
-  align-items: center;
-  justify-content: center;
 }
 
-.modal-content {
-  max-width: 90%;
-  max-height: 80%;
-  margin: auto;
-  display: block;
-  object-fit: contain;
-}
-
-.close {
-  color: #fff;
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
+/* Page-specific overrides can be added below as needed */

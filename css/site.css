@@ -1,40 +1,271 @@
-/* we can use a single css file to style all the files in our wwebsite */
+/* 
+ * Elise Hansen Portfolio - Main Site Styles
+ * A consolidated approach to styling the entire website
+ * with reusable components and consistent design patterns
+ */
 
-/* you can pick your own background colors, text colors, and fonts */
+/* ===== RESET & BASE STYLES ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
-/* we can select an html element tag, in this case "body" will apply to the whole document */
 body {
   background-color: #ffffff;
-  cursor:url('https://static.wikia.nocookie.net/the-sidaba-bunch/images/c/cc/Miffy.png/revision/latest?cb=20240615140420'), auto;
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  cursor: url('https://static.wikia.nocookie.net/the-sidaba-bunch/images/c/cc/Miffy.png/revision/latest?cb=20240615140420'), auto;
 }
 
-/* we can have rules apply to multiple elements at the same time with commas */
-h1,h2,h3 {
+/* ===== TYPOGRAPHY ===== */
+h1, h2, h3, h4, h5, h6 {
   font-family: "Courier New", monospace;
-  
+  margin-top: 0;
+  line-height: 1.2;
 }
 
-/* and we can have rules that overlap other rules, both take effect */
 h1 {
   letter-spacing: 5px;
   word-spacing: 5px;
   font-size: 200%;
+  margin-bottom: 0.5em;
 }
 
-/* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
+h2 {
+  font-size: 160%;
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+}
+
+/* ===== LAYOUT COMPONENTS ===== */
 #content {
   margin: 10px;
   padding: 10px;
-  background-color: #ffffff;
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
-/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.container {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .minor-section {
   border: solid 1px #ffffff;
   background-color: #d8dee9;
-  border-radius: 20px; /* Adjust the value for more or less rounding */
-  overflow: hidden; /* Ensures child elements don't overflow the rounded corners */
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  padding: 20px;
 }
 
+/* Flex container for content layout */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
 
+/* ===== NAVIGATION ===== */
+#links {
+  margin-top: 20px;
+  text-align: center;
+}
 
+#links a {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+#links a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* ===== IMAGES & MEDIA ===== */
+.myName {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+  padding: 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Image hover effects */
+a:hover img {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+/* ===== DYNAMIC GALLERY COMPONENT ===== */
+/* This is a reusable gallery that can be applied to any content */
+.dynamic-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-auto-rows: minmax(110px, auto);
+  grid-auto-flow: dense;
+  gap: 15px;
+  padding: 20px;
+  max-width: 1800px;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.05);
+}
+
+.dynamic-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 1.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  grid-column: span 1;
+  grid-row: span 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  filter: saturate(0.9);
+}
+
+.dynamic-gallery img.small {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.dynamic-gallery img.medium {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.dynamic-gallery img.large {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.dynamic-gallery img.featured {
+  grid-column: span 2;
+  grid-row: span 3;
+}
+
+.dynamic-gallery img:hover {
+  transform: scale(1.03) rotate(0deg) !important;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  filter: saturate(1.1) brightness(1.05);
+}
+
+/* ===== MODAL COMPONENT ===== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.85);
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  margin: auto;
+  display: block;
+  object-fit: contain;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  animation: modal-in 0.3s ease-out;
+  filter: contrast(1.05);
+}
+
+@keyframes modal-in {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.close {
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+  color: #f8f8f8;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hidden caption for accessibility */
+.caption {
+  display: none;
+}
+
+/* ===== UTILITY CLASSES ===== */
+.text-center {
+  text-align: center;
+}
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+
+/* ===== RESPONSIVE ADJUSTMENTS ===== */
+@media (max-width: 768px) {
+  .dynamic-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+    padding: 15px;
+  }
+  
+  h1 {
+    font-size: 160%;
+  }
+  
+  h2 {
+    font-size: 130%;
+  }
+}
+
+@media (max-width: 480px) {
+  .dynamic-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+  
+  .modal-content {
+    max-width: 95%;
+  }
+}

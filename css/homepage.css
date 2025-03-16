@@ -16,6 +16,7 @@
   margin-right: auto;
   max-width: 500px;
   padding: 15px;
+  margin-bottom: 20px; /* Added bottom margin to increase gap */
 }
 .myflex-minor-section {
   display: flex; /* Activates Flexbox */
@@ -23,7 +24,7 @@
   gap: 70px; /* Adds space between images */
   justify-content: center; /* Aligns items horizontally (center, start, end, space-between, etc.) */
   align-items: center; /* Aligns items vertically */
-  padding: 50px 5vw; /* Adds 50px padding to the top and bottom */
+  padding: 10px 5vw 50px 5vw; /* Further reduced top padding */
   border-radius: 20px; /* Adjust the value for more or less rounding */
   overflow: hidden; /* Ensures child elements don't overflow the rounded corners */
   margin: 0 auto; /* Centers it */
@@ -31,9 +32,17 @@
 li a {
   display: block;
 }
-h2 {
-  padding: 5px;
+h1 {
+  padding: 0;
   text-align: center;
+  margin-bottom: 2px; /* Minimal space below h1 */
+}
+
+h2 {
+  padding: 0;
+  text-align: center;
+  line-height: 1.6; /* Increased line height for more space between lines */
+  margin-top: 0; /* Removed space above h2 */
 }
 a:hover img {
   opacity: 0.7;

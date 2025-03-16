@@ -1,36 +1,48 @@
-.minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #c8d2ec;
+/*
+ * Digital Design - Page-specific styles
+ * Only styles that override or extend site.css should go here
+ */
+
+/* Customize the gallery for design work - larger cells and more spacing */
+#digitalDesignGallery {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 30px;
+  background-color: #f0f4f8;
 }
-img {
-  max-width: 500px;
-  width: auto; 
-  height: auto;
+
+/* Ensuring design images maintain proportions better */
+#digitalDesignGallery img {
   object-fit: contain;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
-.project-images {
-  display: flex; /* Activates Flexbox */
-  flex-wrap: wrap; /* Ensures items wrap to the next line if necessary */
-  gap: 50px; /* Adds space between images */
-  justify-content: center; /* Aligns items horizontally (center, start, end, space-between, etc.) */
-  align-items: center; /* Aligns items vertically */
-  padding: 50px 5vw; /* Adds 50px padding to the top and bottom */
-  border-radius: 20px; /* Adjust the value for more or less rounding */
-  overflow: hidden; /* Ensures child elements don't overflow the rounded corners */
-  margin: 0 auto; /* Centers it */
+
+/* Larger featured images for designs that need more space */
+#digitalDesignGallery img.featured {
+  grid-column: span 2;
+  grid-row: span 4;
 }
-.myName {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 500px;
-  padding: 15px;
+
+/* Special styling for the page content */
+#content {
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
 }
+
+/* Typography adjustments for design showcase */
 h1 {
-  display: block;
+  margin-top: 30px;
+  color: #444;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-size: 130%;
+  color: #555;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px;
+  line-height: 1.5;
 }

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title> Walking In America </title>
+	<title>Walking In America</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
   	<meta charset="UTF-8" />
@@ -11,72 +11,62 @@
 	
 	<!-- Include a sitewide CSS file for consistent styling across the site -->
 	<link rel="stylesheet" type="text/css" href="../css/site.css">
-	<!-- Lab-specifc CSS file for any special styling of this particular page -->
+	<!-- Page-specific CSS overrides -->
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
 	
-	<!-- load jQuery library to make javascript easier (must be above our lab js)-->
-	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
-	<script type="text/javascript" src="./js/lab.js" DEFER></script>
+	<script type="text/javascript" src="../js/gallery.js" defer></script>
 	<link rel="icon" href="https://64.media.tumblr.com/d5da4b276773fb266e2c05b0d11e262e/c3f7a9a2c22ff1f3-b5/s2048x3072/ccc081a3c3662bb0e0d0fa0e0b6132b52add14d8.pnj">
 </head>
 <body>
-	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
 	<main id="content">
 		<section>
 			<a href="https://elisehansen00.github.io/art/"><img class="myName" src="./img/nameWebsite.png"></a>
-				<h1> Walking in America</h1>
-				<h2> This project proposal was awarded a Fall 2024 Irwin Grant for $700 of funding from the UC Santa Cruz Art Faculty</h2>
-				<div class="project-images">
-					<img src="./img/P9170407edit.jpg">
-					<img src="./img/PA100410.JPG">
-					<img src="./img/PA110441.JPG">
-					<img src="./img/PA120446.JPG">
-					<img src="./img/PA140043.JPG">
-					<img src="./img/PA140055.JPG">
-					<img src="./img/PA150061.JPG">
-					<img src="./img/PA150071.JPG">
-					<img src="./img/PA150089.JPG">
-					<img src="./img/PA150091.JPG">
-					<img src="./img/PA160008.JPG">
-					<img src="./img/PA160017.JPG">
-					<img src="./img/PA190065.JPG">
-					<img src="./img/PA190067.JPG">
-					<img src="./img/PA220116.JPG">
-					<img src="./img/PA220118.JPG">
-					<img src="./img/PA220119.JPG">
-					<img src="./img/PA220127.JPG">
-					<img src="./img/PA220160.JPG">
-					<img src="./img/PA270040.JPG">
-					<img src="./img/PA270050.JPG">
-					<img src="./img/PA270052copy.jpg">
-					<img src="./img/PA280049copy.jpg">
-					<img src="./img/PA280055copy.jpg">
-					<img src="./img/PA280067copy.jpg">
-					<img src="./img/PA290096.JPG">
-					<img src="./img/PA290098.JPG">
-					<img src="./img/PA290103copy.jpg">
-					<img src="./img/PA290122.JPG">
-					<img src="./img/PA300139.JPG">
-					<img src="./img/PA310025edit.jpg">
-					<img src="./img/PA310058.JPG">
-					<img src="./img/PB100012.JPG">
-					<img src="./img/P7130082.JPG">
-					<img src="./img/P7140118.JPG">
-					<!-- <img src="./img/">
-					<img src="./img/">
-					<img src="./img/">
-					<img src="./img/">!-->
-				</div>
-			<div id="imageModal" class="modal">
-				<span class="close">&times;</span>
-				<img class="modal-content" id="modalImage">
-				<div id="caption"></div>
+			<h1 class="text-center">Walking in America</h1>
+			<h2 class="text-center mb-4">This project proposal was awarded a Fall 2024 Irwin Grant for $700 of funding from the UC Santa Cruz Art Faculty</h2>
+			
+			<!-- Dynamic gallery using the reusable component -->
+			<div id="walkingGallery" class="dynamic-gallery" data-swap-interval="35000">
+				<img src="./img/P9170407edit.jpg" alt="Walking in America">
+				<img src="./img/PA100410.JPG" alt="Walking in America">
+				<img src="./img/PA110441.JPG" alt="Walking in America">
+				<img src="./img/PA120446.JPG" alt="Walking in America">
+				<img src="./img/PA140043.JPG" alt="Walking in America">
+				<img src="./img/PA140055.JPG" alt="Walking in America">
+				<img src="./img/PA150061.JPG" alt="Walking in America">
+				<img src="./img/PA150071.JPG" alt="Walking in America">
+				<img src="./img/PA150089.JPG" alt="Walking in America">
+				<img src="./img/PA150091.JPG" alt="Walking in America">
+				<img src="./img/PA160008.JPG" alt="Walking in America">
+				<img src="./img/PA160017.JPG" alt="Walking in America">
+				<img src="./img/PA190065.JPG" alt="Walking in America">
+				<img src="./img/PA190067.JPG" alt="Walking in America">
+				<img src="./img/PA220116.JPG" alt="Walking in America">
+				<img src="./img/PA220118.JPG" alt="Walking in America">
+				<img src="./img/PA220119.JPG" alt="Walking in America">
+				<img src="./img/PA220127.JPG" alt="Walking in America">
+				<img src="./img/PA220160.JPG" alt="Walking in America">
+				<img src="./img/PA270040.JPG" alt="Walking in America">
+				<img src="./img/PA270050.JPG" alt="Walking in America">
+				<img src="./img/PA270052copy.jpg" alt="Walking in America">
+				<img src="./img/PA280049copy.jpg" alt="Walking in America">
+				<img src="./img/PA280055copy.jpg" alt="Walking in America">
+				<img src="./img/PA280067copy.jpg" alt="Walking in America">
+				<img src="./img/PA290096.JPG" alt="Walking in America">
+				<img src="./img/PA290098.JPG" alt="Walking in America">
+				<img src="./img/PA290103copy.jpg" alt="Walking in America">
+				<img src="./img/PA290122.JPG" alt="Walking in America">
+				<img src="./img/PA300139.JPG" alt="Walking in America">
+				<img src="./img/PA310025edit.jpg" alt="Walking in America">
+				<img src="./img/PA310058.JPG" alt="Walking in America">
+				<img src="./img/PB100012.JPG" alt="Walking in America">
+				<img src="./img/P7130082.JPG" alt="Walking in America">
+				<img src="./img/P7140118.JPG" alt="Walking in America">
 			</div>
 		</section>
-		<nav id="links">
-			<!-- links -->
-			 <a href="https://elisehansen00.github.io/art/"> Back Home! </a>
+		
+		<nav id="links" class="mt-4">
+			<a href="https://elisehansen00.github.io/art/">Back Home!</a>
 		</nav>
 	</main>
 </body>
